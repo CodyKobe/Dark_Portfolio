@@ -1,0 +1,6 @@
+html body .global footer form fieldset input,
+textarea,
+button{
+    border-radius: 0 !important;
+
+}
