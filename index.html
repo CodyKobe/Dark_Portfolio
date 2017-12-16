@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>Dark Portfolio Paweł Rafał Tutak</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- ver. 3.3.7 -->
+
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/fontello.css">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet/less" href="less/myStyle.less">
+	</head>
+	<body>
+		<div id="home">
+			<nav class="navbar navbar-fixed-top">
+				<div class="container-fluid top-navbar">
+					<div class="navbar-header navbar-inverse">
+						<button
+                            type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand logo" href="#home" offset="50" duration="2000" du-smooth-scroll du-scrollspy>
+							<img src="images/logotyp-alpha.png" title="logo">
+							<h1>Pawel R. Tutak</h1>
+						</a>
+					</div>
+
+					<div id="navbar" class="collapse navbar-collapse menu">
+						<ul class="nav navbar-nav pull-right text-xs-center">
+							<li>
+								<a href="#projects" duration="1000" offset="60" du-smooth-scroll du-scrollspy>Projekty</a>
+							</li>
+							<li>
+								<a href="#sites" duration="1000" offset="60" du-smooth-scroll du-scrollspy>Strony</a>
+							</li>
+							<li>
+								<a href="#technologie" duration="1000" offset="60" du-smooth-scroll du-scrollspy>Technologie</a>
+							</li>
+							<li>
+								<a href="#kontakt" duration="1000" offset="170" du-smooth-scroll du-scrollspy>Kontakt</a>
+							</li>
+						</ul>
+					</div> <!-- .menu -->	
+				</div> <!-- koniec .top-navbar -->
+			</nav> 
+
+			<header>
+				<div class="backgr"></div>
+
+				<div class="container-fluid naglowek">
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 col-md-6 motto">
+							<p>
+								TWORZENIE CZEGOŚ NOWEGO<br>
+								NIGDY NIE BYŁO ŁATWE
+							</p>
+							<small></small>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-6 hidden-xs img-col hide">
+							<img src="images/dev.jpg" class="img-responsive">
+						</div>	
+					</div>
+				</div> <!-- koniec .naglowek -->
+			</header>
+
+            <div class="global">
+                <!--      PROJECTS      -->
+                <section class="projects" id="projects">
+                    <h2>Moje projekty</h2>
+                    <h3>
+                        Wszystkie projekty zgodne z Responsive Web Design,
+                        sprawdzone na licznych urządzeniach i systemach
+                    </h3>
+
+                    <div class="container-fluid">
+                        <div class="row text-center">
+
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="frame">
+                                    <a href="../darkPortfolio/">
+                                        <img src="images/darkPortfolio.jpg" class="img-responsive center-block">
+                                    </a>
+                                    <h4>Modern, dark portfolio</h4>
+                                    <p>
+                                        <b><i>Bieżąca strona</i></b><br>Wykonana w preprocesorze LESS, wykorzystuje PHP
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="frame">
+                                    <a href="../classicPortfolio/">
+                                        <img src="images/classicPortfolio.jpg" class="img-responsive center-block">
+                                    </a>
+                                    <h4>Classic Portfolio</h4>
+                                    <p>
+                                        Projekt korzysta z PHP
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="frame">
+                                    <a href="../orange/">
+                                        <img src="images/orange.jpg" class="img-responsive center-block">
+                                    </a>
+                                    <h4>Orange</h4>
+                                    <p>
+                                        Pixel perfect
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div> <!-- koniec .row -->
+                    </div> <!-- koniec .container-fluid -->
+                </section> <!-- koniec .projects -->
+
+
+                <!--  SITES:  from left / from right -->
+                <section class="sites" id="sites">
+                    <h2>Moje strony</h2>
+                    <h3>
+                        Pomniejsze strony w przygotowaniu
+                    </h3>
+
+                    <div class="container-fluid wiersz1">
+                        <div class="row">
+                            <!--all screens-->
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="cyfra">
+                                    <h2>01</h2>
+                                </div>
+                                <div class="frame">
+                                    <div class="opisy">
+                                        <a href="../ikea/">
+                                            <h4>Wizyta u klubowicza</h4>
+                                            <p>
+                                                Strona wykonana w preprocesorze SASS, zawiera galerię zdjęć.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--all screens-->
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="frame">
+                                    <a href="../ikea/">
+                                        <img src="images/ikea.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- koniec .wiersz1 -->
+
+                    <div class="container-fluid wiersz2">
+                        <div class="row">
+                            <!--big screens-->
+                            <div class="col-xs-12 col-sm-12 col-md-6 hidden-xs hidden-sm">
+                                <div class="frame">
+                                    <a href="../summer/">
+                                        <img src="images/summer.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--all screens-->
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="cyfra">
+                                    <h2>02</h2>
+                                </div>
+                                <div class="frame">
+                                    <div class="opisy">
+                                        <a href="../summer/">
+                                            <h4>Summer Collection</h4>
+                                            <p>
+                                                Strona zgodna z RWD
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--small screens-->
+                            <div class="col-xs-12 col-sm-12 col-md-6 hidden-md hidden-lg">
+                                <div class="frame">
+                                    <a href="../summer/">
+                                        <img src="images/summer.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- koniec .wiersz2 -->
+
+                    <div class="container-fluid wiersz3">
+                        <div class="row">
+                            <!--all screens-->
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="cyfra">
+                                    <h2>03</h2>
+                                </div>
+                                <div class="frame">
+                                    <div class="opisy">
+                                        <a href="../newsletter/">
+                                            <h4>Newsletter</h4>
+                                            <p>
+                                                Newsletter w pojedynczym pliku .html
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--all screens-->
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="frame">
+                                    <a href="../newsletter/">
+                                        <img src="images/newsletter.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- koniec .wiersz3 -->
+
+                    <div class="container-fluid wiersz4">
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 hidden-xs hidden-sm">
+                                <div class="frame">
+                                    <a href="../wordpress/">
+                                        <img src="images/wordpress.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="cyfra">
+                                    <h2>04</h2>
+                                </div>
+                                <div class="frame">
+                                    <div class="opisy">
+                                        <a href="../wordpress/">
+                                            <h4>Wordpress</h4>
+                                            <p>
+                                                Początek przygody z Wordpress
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 hidden-md hidden-lg">
+                                <div class="frame">
+                                    <a href="../wordpress/">
+                                        <img src="images/wordpress.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- koniec .wiersz4 -->
+
+                    <div class="container-fluid wiersz5">
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="cyfra">
+                                    <h2>05</h2>
+                                </div>
+                                <div class="frame">
+                                    <div class="opisy">
+                                        <a href="../archLandPage/">
+                                            <h4>Architecture Landing Page</h4>
+                                            <p>
+                                                Strona wykorzystuje AJAX
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="frame">
+                                    <a href="../archLandPage/">
+                                        <img src="images/archLandPage.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- koniec .wiersz5 -->
+
+                    <div class="container-fluid wiersz6">
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 hidden-xs hidden-sm">
+                                <div class="frame">
+                                    <a href="../shop/">
+                                        <img src="images/shop.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="cyfra">
+                                    <h2>06</h2>
+                                </div>
+                                <div class="frame">
+                                    <div class="opisy">
+                                        <a href="../shop/">
+                                            <h4>Shop</h4>
+                                            <p>
+                                                Sklep - wersja desktop
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 hidden-md hidden-lg">
+                                <div class="frame">
+                                    <a href="../shop/">
+                                        <img src="images/shop.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- koniec .wiersz6 -->
+
+                </section> <!-- koniec .sites -->
+
+
+                <!--   TECHNOLOGIE  -->
+                <section class="technologie" id="technologie">
+                    <h2>Technologie</h2>
+                    <h3>
+                        Do pracy wykorzystuję:
+                    </h3>
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <i class="icon-html5"></i>
+                                    <h4> HTML5 </h4>
+                                    <p>
+                                        But I must explain to you how all this mistaken idea
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <i class="icon-css3"></i>
+                                    <h4> CSS3 </h4>
+                                    <p>
+                                        of denouncing pleasure and praising pain was born
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-xs-block"></div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <i class="icon-github-circled-alt2"></i>
+                                    <h4> Git </h4>
+                                    <p>
+                                        and I'll give you a complete account of the system,
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-sm-block"></div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> React </h4>
+                                    <p>
+                                        and expound the actual teachings of the great explorer
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-xs-block"></div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> JavaScript </h4>
+                                    <p>
+                                        But I must explain to you how all this mistaken idea
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> SASS LESS Stylus </h4>
+                                    <p>
+                                        of denouncing pleasure and praising pain was born
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-xs-block visible-sm-block"></div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <!-- <i class="icon-github-circled-alt2"></i> -->
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> Webpack </h4>
+                                    <p>
+                                        and I'll give you a complete account of the system,
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> Gulp </h4>
+                                    <p>
+                                        and expound the actual teachings of the great explorer
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-xs-block"></div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> WebStorm </h4>
+                                    <p>
+                                        But I must explain to you how all this mistaken idea
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-sm-block"></div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> ECMAScript 6 </h4>
+                                    <p>
+                                        of denouncing pleasure and praising pain was born
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-xs-block"></div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <!-- <i class="icon-wordpress"></i> -->
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> Linux </h4>
+                                    <p>
+                                        and I'll give you a complete account of the system,
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 clearfix">
+                                <div class="frame">
+                                    <img src="images/portfolio1.jpg" class="img-responsive">
+                                    <h4> Photoshop </h4>
+                                    <p>
+                                        and expound the actual teachings of the great explorer
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section> <!-- koniec .technologie -->
+
+                <footer id="kontakt">
+                    <form>
+                        <fieldset>
+
+                            <h2>Kontakt</h2>
+
+                            <div class="onSend hidden">
+                                Wysyła się...
+                            </div>
+                            <div class="sent hidden">
+                                Wysłano!
+                            </div>
+
+                            <!-- Text input-->
+                            <!--<label class="col-md-4 control-label" for="imie">Imię:</label>-->
+                            <input id="imie" name="imie" type="text" placeholder="imię" required="">
+
+                            <!-- Text input-->
+                            <!--<label class="col-md-4 control-label" for="email">Adres e-mail:</label>-->
+                            <input id="email" name="email" type="email" placeholder="adres e-mail" required="">
+
+                            <!-- Textarea -->
+                            <!--<label class="col-md-4 control-label" for="textarea">Pytanie:</label>-->
+                            <textarea id="textarea" name="textarea" placeholder="pytanie"></textarea>
+
+                            <!-- Button -->
+                            <!--<label class="col-md-4 control-label" for="wyslij"></label>-->
+                            <button id="wyslij" name="wyslij" type="button">Wyślij</button>
+
+                        </fieldset>
+                    </form>
+                </footer> <!-- koniec footer #kontakt -->
+            </div> <!-- koniec .global -->
+		</div> <!-- koniec #home -->
+
+		<script type="text/javascript" src="js/less.min.js"></script> <!-- ver. 2.7.1 -->
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- ver. 3.3.7 -->
+
+		<script type="text/javascript" src="js/myScript.js"></script>
+
+		<script type="text/javascript" src="js/angular.min.js"></script> <!-- ver. 1.5.7 -->
+		<script type="text/javascript" src="js/angular-scroll.min.js"></script>
+		<script type="text/javascript" src="js/myApp.js"></script>
+	</body>
+</html>
