@@ -5,9 +5,11 @@
 
 # User-specific files
 .idea
-02.koniec-gotowy
+formtest/
 sent-test.php
-PHPMailer-master
+PHPMailer-master/
+#please remember: less compile on client side
+
 
 *.suo
 *.user
