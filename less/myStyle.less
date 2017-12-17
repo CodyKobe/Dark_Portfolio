@@ -1,0 +1,424 @@
+@import "mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body{
+	color: #fff;
+	background-color: #222;
+	font-family: 'Open Sans Condensed', sans-serif;
+	-ms-font-family: 'Open Sans Condensed', sans-serif;
+	-ms-font-weight: 300!important;
+	letter-spacing: 0.1rem;
+	font-size: 18px;
+	border-radius: 0!important;
+}
+
+.global{
+	max-width: 1600px;
+	margin: auto
+}
+
+h2{
+	text-transform: uppercase;
+	padding-top: 7%;
+	text-align: center;
+}
+h3{
+	padding-top: 1%;
+	padding-bottom: 2%;
+	text-align: center;
+	font-size: 2rem;
+	color: #ddd;
+	letter-spacing: 0.1rem;
+}
+h4{
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 1rem;
+}
+.mb50{
+	margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+	// Align text to center
+	.text-xs-center {
+		text-align: center;
+	} 
+	// Align image to center if has .img-responsive
+	.img-xs-center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+// ----- nav -----
+@media (max-width: 991px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-left,.navbar-right {
+		float: none !important;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav {
+		float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.collapse.in{
+		display:block !important;
+	}
+}
+.top-navbar{
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6)!important;
+	//	opacity: 0.5;
+	.navbar-inverse{
+		background-color: transparent;
+	}
+	.logo{
+		img{
+			display:inline;
+			height: 100%;
+			padding: 0;
+			margin: -20px 10px 0 10px;
+		}
+		h1{
+			font-family: 'Waiting for the Sunrise', cursive;
+			display: inline;
+			font-size: 3rem;
+			//bottom: 1.5rem;
+			color: #fff;
+		}
+	}
+	.logo.active{
+		h1{
+			border-bottom: 1.7px solid #888;
+		}
+	}
+
+	.menu{
+		ul{
+			padding: 1rem 3rem 1rem 3rem;
+			li{
+				//display: inline-block;
+				margin: 1rem 1.5rem 1rem 1.5rem;
+				box-shadow: 1px 1px 4px 1px rgba(250,250,250,0.50);
+				a:focus{
+					background-color: #555;
+				}
+				a{
+					padding: 0.4rem 2rem 0.1rem 2rem;
+					background: #555;
+					text-align: center;
+					border-bottom: 1px solid #888;
+					text-decoration: none;
+					color: #ffffff;
+					font-size: 1.8rem;
+				}
+				a.active{
+					background: #222;
+					text-decoration: none;
+				}
+				a:hover{
+					text-decoration: none;
+					background: #000;
+					box-shadow: 1px 1px 4px 0 rgba(250,250,250,0.90) inset;
+				}
+			}
+		}
+	}
+}
+
+
+// ---- header .naglowek ----
+header{
+	background: url(../images/photo-unsplash-graphic-d.jpg);
+	background-size: cover;
+	z-index: 5;
+	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	min-height: 712px;
+	.backgr{
+		background: #1c2236;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		min-height: 712px;
+		width: 100%;
+		opacity: 0.6;
+	}
+	.naglowek{
+		color: #fff;
+		text-transform: uppercase;
+		margin: 0 4%;
+		z-index: 7;
+		height: 100vh;
+		.motto{
+			p{
+				font-size: 4rem;
+				line-height: 5rem;
+				margin-top: 65vh;
+				margin-left: 10%;
+				opacity: 0.4;
+				font-weight: 700;
+				color: #000;
+				text-shadow: 
+					-1px -1px 0px #fff,
+					-1px 1px 0px #fff,
+					1px 1px 0px #fff,
+					1px -1px 0px #fff;
+			}
+			small{
+				padding-top: 3%;
+				padding-bottom: 8%;
+				font-size: 2.5rem;
+				margin-left: 10%;
+				opacity: 1;
+				display: block;
+			}
+		}
+		.img-col{
+			height: 100vh;
+			img{
+				margin: 20vh 10% 15vh 0;
+				//max-height: 70vh;
+				z-index: 15;
+				// border: 4px double hsla(230, 100%, 50%, 0.5);	
+				box-shadow: 0 0 10px 2px rgba(0,0,0,0.6), 0 0 20px 4px rgba(0,0,0,0.9);
+				position: absolute;
+				bottom: 0;
+				opacity: 0.55;
+				//	@media (max-width: 100px) {
+				//	margin-top: 65vh;
+				//}
+			}
+		}
+	}
+}
+
+// ---- section .projects ----
+.projects{
+	padding: 0 2%;
+	h2{
+	}
+	.frame{
+		padding-top: 7%;
+		padding-bottom: 3%;
+		p{
+		}
+	}
+}
+
+// ---- section .sites ----
+.sites{
+	.box{
+		position: relative;
+	}
+	.cyfra{
+		position: absolute;
+		z-index: 0;
+		h2{
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 24rem;
+			z-index: -1;
+			opacity: 0.2;
+			padding-left: 25%;
+			padding-top: 15%; 
+			padding-bottom: 0;
+		}
+	}
+	//	@media od medium
+	//	.wiersz1 .frame{
+	//		margin-top: 3%;
+	//	}
+	.frame{
+		position: relative;
+		//		border: 0.5px dotted #555;
+		z-index: 2;
+		margin: 9% 3%;
+		padding: 0 9%;
+		.opisy{
+
+			margin-top: 15%;
+			padding: 4%;
+			padding-bottom: 0;
+			p{
+				text-align: center;
+				color: #ddd;
+				letter-spacing: 0.1rem;
+			}
+		}
+	}
+}
+
+// ---- section .technologie ----
+.technologie{
+	margin: 0 3%;
+	.frame{
+		border: 0.5px solid #555;
+		margin: 15px 0;
+		padding: 8%;
+		text-align: center;
+		i::before{
+			margin-top: 18%!important;
+			margin-bottom: 9%!important;
+		}
+		h4{
+			font-size: 1.95rem;
+			margin-bottom: 1.55rem;
+		}
+		p{
+			color: #ddd;
+			margin-bottom: 0;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+// ---- footer #kontakt ----
+footer{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 3.9%;
+	padding-right: 3.9%;
+	padding-bottom: 12rem;
+	max-width: 70rem;
+	text-align: center;
+
+	input[type=text],
+	input[type=email],
+	textarea {
+		display: block;
+		width: 100%;
+		background: #555;
+		color: white;
+		border: 2px solid #aaf;
+		font-size: inherit;
+		box-sizing: border-box;
+		outline: none;
+		margin-top: 2rem;
+		bottom: 0;
+		text-align: center;
+
+	}
+	input[type=text]:focus,
+	input[type=email]:focus,
+	textarea:focus {
+		box-shadow: 0px 0px 10px 2px rgba(150,150,255,0.9);
+		border: 2px solid lightgreen;
+		background: #cfc;
+		color: black;
+
+	}
+
+	button[type=button] {
+		width: 220px;
+		background: black;
+		font-size: 1em;
+		color: white;
+		padding: 0;
+		margin-top: 10px;
+		cursor: pointer;
+		letter-spacing: 2px;
+		outline: none;
+		margin-top: 20px;
+
+	}
+	button[type=button]:focus{
+		box-shadow: 0px 0px 15px 5px rgba(200,200,200,0.9);
+
+	}
+	button[type=button]:hover{
+		background: darkgray;
+
+	}
+
+	/* webkit */
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder  {
+		color: #8bf;
+		bottom: 0;
+		text-align: center;
+	}
+	input:focus::-webkit-input-placeholder,
+	textarea:focus::-webkit-input-placeholder  {
+		color: #428C42;
+	}
+
+	/* Firefox < 19 */
+	input:-moz-placeholder,
+	textarea:-moz-placeholder {
+		color: #8bf;
+		opacity: 1;
+		text-align: center;
+	}
+	input:focus:-moz-placeholder, 
+	textarea:focus:-moz-placeholder  {
+		color: #428C42;
+	}
+
+	/* Firefox > 19 */
+	input::-moz-placeholder,
+	textarea::-moz-placeholder  {
+		color: #8bf;
+		opacity: 1;
+		text-align: center;
+	}
+	input:focus::-moz-placeholder, 
+	textarea:focus::-moz-placeholder  {
+		color: #428C42;
+	}
+
+	/* Internet Explorer 10 */
+	input:-ms-input-placeholder, 
+	textarea:-ms-input-placeholder  {
+		color: #8bf;
+		text-align: center;
+	}
+	input:focus:-ms-input-placeholder,  
+	textarea:focus:-ms-input-placeholder  {
+		color: #428C42;
+	}
+
+	.error{
+		color: red;
+	}
+	.error:before{
+		box-shadow: 0px 0px 10px 2px rgba(255,75,100,0.9);
+		border-bottom: 4px solid red;
+	}
+
+}
+
+// ---- end of file ----

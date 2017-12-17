@@ -1,0 +1,10 @@
+.cols(@cols: 12, @allcols: 12, @offset: 0){
+
+    @colwidth: @cols/@allcols;
+    @offsetwidth: @offset/@allcols;
+
+    width: percentage(@colwidth);
+    margin-left: percentage(@offsetwidth);
+    float: left;
+
+}
